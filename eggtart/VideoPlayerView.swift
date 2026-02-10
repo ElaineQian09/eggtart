@@ -26,3 +26,17 @@ struct VideoPlayerView: UIViewRepresentable {
         uiView.playerLayer.player = player
     }
 }
+
+struct DualVideoPlayerView: View {
+    @ObservedObject var controller: VideoPlaybackController
+
+    var body: some View {
+        ZStack {
+            VideoPlayerView(player: controller.primaryPlayer)
+                .opacity(controller.primaryOpacity)
+
+            VideoPlayerView(player: controller.secondaryPlayer)
+                .opacity(controller.secondaryOpacity)
+        }
+    }
+}

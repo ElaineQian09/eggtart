@@ -6,11 +6,60 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		830FB5A52F3988AF0072B3D6 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830FB5A42F3988AE0072B3D6 /* ReplayKit.framework */; };
+		830FB5AC2F3988AF0072B3D6 /* BroadcastUpload.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 830FB5A22F3988AE0072B3D6 /* BroadcastUpload.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		830FB5AA2F3988AF0072B3D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837D17252F257D9A00198FA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830FB5A12F3988AE0072B3D6;
+			remoteInfo = BroadcastUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		830FB5B12F3988AF0072B3D6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				830FB5AC2F3988AF0072B3D6 /* BroadcastUpload.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		830FB5A22F3988AE0072B3D6 /* BroadcastUpload.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUpload.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		830FB5A42F3988AE0072B3D6 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		837D172D2F257D9A00198FA5 /* eggtart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eggtart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		830FB5AD2F3988AF0072B3D6 /* Exceptions for "BroadcastUpload" folder in "BroadcastUpload" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 830FB5A12F3988AE0072B3D6 /* BroadcastUpload */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		830FB5A62F3988AF0072B3D6 /* BroadcastUpload */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				830FB5AD2F3988AF0072B3D6 /* Exceptions for "BroadcastUpload" folder in "BroadcastUpload" target */,
+			);
+			path = BroadcastUpload;
+			sourceTree = "<group>";
+		};
 		837D172F2F257D9A00198FA5 /* eggtart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = eggtart;
@@ -19,6 +68,14 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		830FB59F2F3988AE0072B3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830FB5A52F3988AF0072B3D6 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837D172A2F257D9A00198FA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830FB5A32F3988AE0072B3D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				830FB5A42F3988AE0072B3D6 /* ReplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		837D17242F257D9A00198FA5 = {
 			isa = PBXGroup;
 			children = (
 				837D172F2F257D9A00198FA5 /* eggtart */,
+				830FB5A62F3988AF0072B3D6 /* BroadcastUpload */,
+				830FB5A32F3988AE0072B3D6 /* Frameworks */,
 				837D172E2F257D9A00198FA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				837D172D2F257D9A00198FA5 /* eggtart.app */,
+				830FB5A22F3988AE0072B3D6 /* BroadcastUpload.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +116,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		830FB5A12F3988AE0072B3D6 /* BroadcastUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830FB5AE2F3988AF0072B3D6 /* Build configuration list for PBXNativeTarget "BroadcastUpload" */;
+			buildPhases = (
+				830FB59E2F3988AE0072B3D6 /* Sources */,
+				830FB59F2F3988AE0072B3D6 /* Frameworks */,
+				830FB5A02F3988AE0072B3D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				830FB5A62F3988AF0072B3D6 /* BroadcastUpload */,
+			);
+			name = BroadcastUpload;
+			packageProductDependencies = (
+			);
+			productName = BroadcastUpload;
+			productReference = 830FB5A22F3988AE0072B3D6 /* BroadcastUpload.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		837D172C2F257D9A00198FA5 /* eggtart */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837D17382F257D9E00198FA5 /* Build configuration list for PBXNativeTarget "eggtart" */;
@@ -55,10 +145,12 @@
 				837D17292F257D9A00198FA5 /* Sources */,
 				837D172A2F257D9A00198FA5 /* Frameworks */,
 				837D172B2F257D9A00198FA5 /* Resources */,
+				830FB5B12F3988AF0072B3D6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				830FB5AB2F3988AF0072B3D6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				837D172F2F257D9A00198FA5 /* eggtart */,
@@ -77,9 +169,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2610;
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
+					830FB5A12F3988AE0072B3D6 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					837D172C2F257D9A00198FA5 = {
 						CreatedOnToolsVersion = 26.1;
 					};
@@ -100,11 +195,19 @@
 			projectRoot = "";
 			targets = (
 				837D172C2F257D9A00198FA5 /* eggtart */,
+				830FB5A12F3988AE0072B3D6 /* BroadcastUpload */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		830FB5A02F3988AE0072B3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837D172B2F257D9A00198FA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +218,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		830FB59E2F3988AE0072B3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837D17292F257D9A00198FA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +234,75 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		830FB5AB2F3988AF0072B3D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830FB5A12F3988AE0072B3D6 /* BroadcastUpload */;
+			targetProxy = 830FB5AA2F3988AF0072B3D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		830FB5AF2F3988AF0072B3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastUpload/BroadcastUpload.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CZKR42UKD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastUpload/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Eggtart;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luciayuanzhu.eggtart.BroadcastUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		830FB5B02F3988AF0072B3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastUpload/BroadcastUpload.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CZKR42UKD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastUpload/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Eggtart;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luciayuanzhu.eggtart.BroadcastUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		837D17362F257D9E00198FA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,8 +427,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = eggtart/eggtart.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CZKR42UKD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access for live voice conversations.";
@@ -281,8 +461,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = eggtart/eggtart.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CZKR42UKD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access for live voice conversations.";
@@ -311,6 +493,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		830FB5AE2F3988AF0072B3D6 /* Build configuration list for PBXNativeTarget "BroadcastUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830FB5AF2F3988AF0072B3D6 /* Debug */,
+				830FB5B02F3988AF0072B3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		837D17282F257D9A00198FA5 /* Build configuration list for PBXProject "eggtart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

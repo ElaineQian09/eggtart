@@ -7,12 +7,7 @@ enum VideoAsset: String, CaseIterable {
     case waketosleep
 
     case listening1
-    case listening2
-    case listening3
-
     case speaking1
-    case speaking2
-    case speaking3
 
     case happy
     case angry
@@ -28,10 +23,7 @@ enum VideoAsset: String, CaseIterable {
 
 enum VideoResolver {
     static func url(for name: String) -> URL {
-        let missingFallback: Set<String> = [
-            "listening2", "listening3", "speaking2", "speaking3"
-        ]
-        let resolvedName = missingFallback.contains(name) ? "default" : name
+        let resolvedName = name
         let bundle = Bundle.main
         if let url = bundle.url(forResource: resolvedName, withExtension: "mp4") {
             return url
